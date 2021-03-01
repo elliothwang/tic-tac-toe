@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 10 vmin;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Shippori Mincho', serif;
+  }
+
+header {
+    font-size: 5.5vmin;
+    color: #0073e6;
+    text-align: center;
+}
+
+h1{
+    font-size: 4vmin;
+    color: black;
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 0.3vmin;
+    
+}
+
+#board > div {
+    background-color: lightslategray;
+}
+
+button {
+    visibility: hidden;
+    margin: 2vmin 0 0 0;
+}
+
+h2 {
+    font-size: 3vmin;
+    color: black;
+    text-align: center;
+}
