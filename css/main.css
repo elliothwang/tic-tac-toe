@@ -16,6 +16,7 @@ header {
     font-size: 5.5vmin;
     color: #0073e6;
     text-align: center;
+    margin: 9vmin 2vmin 0 0;
 }
 
 h1{
@@ -29,11 +30,16 @@ h1{
     grid-template-columns: repeat(3, 10vmin);
     grid-template-rows: repeat(3, 10vmin);
     gap: 0.3vmin;
-    
 }
 
 #board > div {
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
+    border: 0.3vmin solid black;
+  }
+
+#board > div:hover {
+    transform: scale(0.7);
+    transition: all 0.1s ease-in;
 }
 
 button {
@@ -42,7 +48,7 @@ button {
 }
 
 h2 {
-    font-size: 3vmin;
+    font-size: 3vmin; 
     color: black;
     text-align: center;
 }
